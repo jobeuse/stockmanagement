@@ -1,0 +1,1 @@
+<a href="confirm.php?name=<?php echo($_SESSION['login'])?>" class="font-weight-bold text-decoration-none text-danger">logout</a>

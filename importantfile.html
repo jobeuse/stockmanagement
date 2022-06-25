@@ -1,0 +1,31 @@
+$ddc=mysqli_query($conn,"ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`)");
+
+$addi=mysqli_query($conn,"ALTER TABLE `imported`
+  ADD PRIMARY KEY (`p_id`)");
+
+$addl=mysqli_query($conn,"ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`)");
+
+$addn=mysqli_query($conn,"ALTER TABLE `notification`
+  ADD PRIMARY KEY (`p_id`)");
+
+$ddc=mysqli_query($conn,"ALTER TABLE `category`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT
+");
+
+mysqli_query($conn,"ALTER TABLE `imported`
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT");
+
+
+mysqli_query($conn,"ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT");
+
+
+mysqli_query($conn,"ALTER TABLE `myguests`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT");
+
+
+mysqli_query($conn,"ALTER TABLE `notification`
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT"); 
+ 
